@@ -1,184 +1,292 @@
 <!DOCTYPE html>
-<!-- HTML/CS/JS written by hand in vim.  Boo complexity! -->
-    <head>
-        <meta name="viewport" content="width=560px">
-        <title>Stuart Owen Axelbrooke - Founder at Thought Vector</title>
 
-	<link href="http://fonts.googleapis.com/css?family=Roboto:300,100" rel="stylesheet" type="text/css">
+<head>
+    <meta name="viewport" content="width=560px">
+    <title>Stuart Owen Axelbrooke - Founder at Thought Vector</title>
 
-        <!-- for Google -->
-        <meta name="description" content="Stuart Axelbrooke is the Founder of Thought Vector in Seattle. They provide machine learning and natural language processing solutions that large-scale text understanding."/>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet" type="text/css">
+    <link href="/bulma.css" rel="stylesheet" type="text/css" media="all">
 
-        <meta name="author" content="Stuart Axelbrooke" />
-        <meta name="copyright" content="2017 Stuart Axelbrooke" />
+    <!-- for Google -->
+    <meta name="description"
+        content="Stuart Axelbrooke is the Founder of Thought Vector in Seattle. He provides machine learning and natural language processing solutions that power large-scale text understanding." />
 
-        <!-- For Facebizl -->
-        <meta property="og:title" content="Stuart Axelbrooke"/>
-        <meta property="og:url" content="http://stuart.axelbrooke.com"/>
-        <meta property="og:site_name" content="Stuart Axelbrooke"/>
-        <meta property="og:description" content="Stuart Axelbrooke is the Founder of Thought Vector in Seattle. They provide machine learning and natural language processing solutions that large-scale text understanding." />
+    <meta name="author" content="Stuart Axelbrooke" />
+    <meta name="copyright" content="2020 Stuart Axelbrooke" />
 
-        <!-- for Twitter -->
-        <meta name="twitter:card" content="Stuart Axelbrooke is the Founder of Thought Vector in Seattle. They provide machine learning and natural language processing solutions that large-scale text understanding." />
-        <meta name="twitter:title" content="Stuart Axelbrooke" />
-        <meta name="twitter:description" content="Stuart Axelbrooke is the Founder of Thought Vector in Seattle. They provide machine learning and natural language processing solutions that large-scale text understanding." />
+    <!-- For Facebizl -->
+    <meta property="og:title" content="Stuart Axelbrooke" />
+    <meta property="og:url" content="http://stuart.axelbrooke.com" />
+    <meta property="og:site_name" content="Stuart Axelbrooke" />
+    <meta property="og:description"
+        content="Stuart Axelbrooke is the Founder of Thought Vector in Seattle. He provides machine learning and natural language processing solutions that power large-scale text understanding." />
 
-	<link rel="canonical" href="http://stuart.axelbrooke.com" />
+    <!-- for Twitter -->
+    <meta name="twitter:card"
+        content="Stuart Axelbrooke is the Founder of Thought Vector in Seattle. He provides machine learning and natural language processing solutions that power large-scale text understanding." />
+    <meta name="twitter:title" content="Stuart Axelbrooke" />
+    <meta name="twitter:description"
+        content="Stuart Axelbrooke is the Founder of Thought Vector in Seattle. He provides machine learning and natural language processing solutions that power large-scale text understanding." />
 
-        <style>
+    <link rel="canonical" href="http://stuart.axelbrooke.com" />
 
-            /* Body, sight. */
-            body {
-                margin: 0;
-            }
-
-            /* Container styling */
-            div.content {
-                width: 480px;
-                margin: 0 auto;
-                padding: 120px 40px 100px 40px;
-            }
-
-            /* Header Styles */
-            h1.name {
-                font-family: Roboto, Arial;
-		        font-weight: 100;
-                text-align: center;
-                font-size: 62px;
-                letter-spacing: 5px;
-                color: #000;
-                margin-bottom: 5px;
-                width: 480px;
-		
-            }
-            h2.tagline {
-                font-family: Roboto, Arial;
-        		font-weight: 300;
-                text-align: center;
-                font-size: 17.4px;
-                letter-spacing: 1px;
-                color: #444;
-                width: 480px;
-            }
-            div.header {
-                width: 480px;
-                margin-bottom: 100px;
-            }
-
-            /* Heading styles */
-            div.projectsheader {
-                font-family: Roboto, Arial;
-		        font-weight: 300;
-                font-size: 22px;
-                margin: 50px 0 0 0;
-                color: #333;
-            }
-
-            div.workheader, div.funheader {
-                font-family: Roboto, Arial;
-		        font-weight: 300;
-                font-size: 18px;
-                margin: 10px 0;
-                color: #333;
-            }
-
-            /* Project styles */
-            div.current, div.past{
-                margin: 0;
-                padding: 0;
-                width: 480px;
-            }
-            div.work, div.fun {
-                display: inline-block;
-                margin: 0;
-                padding: 10px 0;
-                width: 228px;
-                vertical-align: top;
-            }
-            div.work {
-                padding-right: 5px;
-            }
-            div.fun {
-                padding-left: 5px;
-            }
-            p {
-                font-family: Roboto, Arial;
-        		font-weight: 300;
-                font-size: 15px;
-                color: #444;
-            }
-            a {
-                color: #888;
-            }
-        </style>
-	
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72008811-1"></script>
-        <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72008811-1"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-72008811-1');
-        </script>
+    </script>
 
-    </head>
-    <body>
+    <style>
+        a {
+            color: #ff6c41;
+        }
 
-        <div class="content">
-            <div class="header">
-                <h1 class="name">STUART AXELBROOKE</h1>
-                <h2 class="tagline">Founder at Thought Vector</h2>
-            </div>
-            <div class="current">
-                <div class="projectsheader">Current Projects</div>
-                <div class="work">
-                    <div class="workheader">Work</div>
-                    <p><a href="https://www.taggit.io">Taggit</a><br>Founder<br>May 2018 - Present</p>
-                    <p><a href="https://www.thoughtvector.io">Thought Vector</a><br>Founder<br>Jan 2018 - Present</p>
+        .container {
+            max-width: 800px;
+        }
+
+        section {
+            margin-bottom: 3em;
+        }
+
+        .top-hero .title {
+            font-weight: 400 !important;
+        }
+
+        .title,
+        .subtitle,
+        .subsubtitle {
+            font-weight: 300 !important;
+        }
+
+        .subsubtitle {
+            font-size: 24px !important;
+        }
+
+        body * {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+        }
+
+        .image.me img {
+            max-width: 150px;
+            border-radius: 8px;
+        }
+
+        .top-hero .hero-body .container {
+            display: flex;
+        }
+
+        .hero-body .bio {
+            padding-left: 2em;
+            flex: 1;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            text-align: left;
+        }
+
+        .grid-container.project {
+            margin-bottom: 3em;
+        }
+
+        .grid-box {
+            place-self: center stretch;
+        }
+
+        @media (min-width: 600px) {
+            .grid-box:first-child {
+                margin-right: 1em;
+            }
+
+            .grid-box:last-child {
+                margin-left: 1em;
+            }
+        }
+
+        .grid-box.img {
+            text-align: center;
+        }
+
+        .grid-box.img img {
+            max-height: 276px;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-box:first-child {
+                margin-bottom: 1em;
+            }
+
+            .container {
+                margin: 1em;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="content">
+        <section class="hero is-medium top-hero" style="margin-bottom: 0;">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="image me">
+                        <img src="assets/me.jpg" alt="Stuart Axelbrooke">
+                    </div>
+                    <div class="bio">
+                        <div class="content">
+                            <h1 class="title">
+                                Stuart Axelbrooke
+                            </h1>
+                            <h2 class="subtitle">
+                                Founder at Thought Vector
+                            </h2>
+                            <p>
+                                Stuart Axelbrooke is the Founder of Thought Vector in Seattle. He provides machine
+                                learning and natural language processing solutions that power large-scale text
+                                understanding.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="fun">
-                    <div class="funheader">Fun</div>
-                    <p><a href="https://www.nlsea.com">NLSea - A Seattle NLP Meetup</a><p>
-                    <p><a href="https://www.github.com/soaxelbrooke/phrase">phrase</a></p>
-                    <p><a href="https://www.github.com/soaxelbrooke/python-bpe">Python Byte Pair Encoding</a></p>
-                    <p><a href="https://soaxelbrooke.github.io/browser-sentiment.html">Browser Sentiment</a></p>
-                    <p><a href="https://www.kaggle.com/thoughtvector/customer-support-on-twitter">Customer Support on Twitter Dataset</a></p>
-                    <p>Climbing</p>
-                    <p><a href="http://instagram.com/soaxelbrooke">Photography</a></p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container news">
+                <h1 class="title">News</h1>
+                <ul>
+                    2020-01-28 &mdash; Next NLSea meetup announced: <a href="https://www.meetup.com/PSPPython/events/268070488/">Language Models and Transformers</a>
+                </ul>
+                <ul>2019-12-09 &mdash; Blog post published: <a href="https://www.thoughtvector.io/blog/subword-tokenization/">Subword Tokenization - Handling Misspellings and Multilingual Data</a></ul>
+                <ul>2019-12-04 &mdash; NLSea video published: <a href="https://youtu.be/hAvtJ516Mw4">Subword Tokenization</a></ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="container featured-projects">
+                <h1 class="title">Featured Projects</h1>
+
+                <div class="hero-body is-paddingless">
+                    <div class="container grid-container project">
+                        <div class="grid-box">
+                            <h1 class="subsubtitle"><a href="https://www.taggit.io">Taggit</a> - Auto Tagging as a
+                                Service</h1>
+                            <p>With Taggit's topic auto tagging, you can automatically detect and count any topic you
+                                can tag in text. By auto tagging text topics, you can lower feedback categorization
+                                costs, stack rank problems by impact, and monitor known problems and ensure resolution.
+                            </p>
+                        </div>
+
+                        <div class="grid-box img">
+                            <img src="assets/taggit.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-body is-paddingless">
+                    <div class="container grid-container project">
+                        <div class="grid-box">
+                            <h1 class="subsubtitle"><a href="https://www.github.com/soaxelbrooke/phrase">Phrase</a> -
+                                Blazing Fastest Phrase Extraction</h1>
+                            <p>Phrase is a CLI tool and server for learning significant phrase/term models from
+                                unlabeled text data, and efficiently identifying those phrases in new text. It uses
+                                Rust, dataset partitioning, and mutual information to learn the highest quality phrases
+                                quickly.</p>
+                        </div>
+
+                        <div class="grid-box img">
+                            <img src="assets/phrase.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-body is-paddingless">
+                    <div class="container grid-container project">
+                        <div class="grid-box">
+                            <h1 class="subsubtitle"><a
+                                    href="https://www.meetup.com/find/events/?allMeetups=false&keywords=NLSea&radius=50&userFreeform=Seattle%2C+WA">NLSea</a>
+                                - Seattle Natural Language Processing Meetup</h1>
+                            <p>NLSea is a special interest group of Puget Sound Python focused on application of natural
+                                language processing (NLP). The event is for NLP practitioners as well as those wanting
+                                to get into the field. We cover modern applications of NLP, including project briefs as
+                                well as recent important research papers.</p>
+                        </div>
+
+                        <div class="grid-box img">
+                            <img src="assets/nlsea-frst-meetup.JPG">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1 class="title">Other Projects</h1>
+                <div class="container grid-container">
+                    <div class="grid-box" style="place-self: start;">
+                        <p><a href="https://www.github.com/soaxelbrooke/python-bpe">Python Byte Pair Encoding</a>
+                        </p>
+                        <p><a href="https://soaxelbrooke.github.io/browser-sentiment.html">Browser Sentiment</a></p>
+                        <p><a href="https://www.kaggle.com/thoughtvector/customer-support-on-twitter">Customer
+                                Support
+                                on Twitter Dataset</a></p>
+                        <p><a href="http://instagram.com/soaxelbrooke">Photography</a></p>
+                    </div>
+                    <div class="grid-box" style="place-self: start;">
+                        <p><a href="https://github.com/StuartAxelOwen/join">join</a></p>
+                        <p><a href="https://github.com/StuartAxelOwen/datastreams">datastreams</a></p>
+                        <p><a href="https://play.google.com/store/apps/details?id=com.brogramming.HoloCalc">HoloCalc</a></p>
+                        <p><a href="http://youtu.be/ldGRDaz3O_4">Resistive 3d Touch Panel</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="past">
-                <div class="projectsheader">Past Projects</div>
-                <div class="work">
-                    <div class="workheader">Work</div>
-                    <p><a href="http://www.apptentive.com/">Apptentive</a><br>Senior Engineer<br>Jun 2015 - Dec 2017</p>
-                    <p><a href="http://www.informion.com/">Informion</a><br>Principal Engineer<br>Dec 2014 - Jun 2015</p>
-                    <p><a href="https://www.giftstarter.com?stuartaxelbrooke">GiftStarter</a><br>Co-Founder<br>Mar 2014 - Dec 2014</p>
-                    <p><a href="http://app.truestyle.co">TRUE STYLE</a><br>Founder<br>Aug 2013 - Mar 2014</p>
-                    <p><a href="http://www.cypress.com/">Cypress Semiconductor</a><br>Sr. Applications Engineer<br>2010 - 2013</p>
-                </div>
-                <div class="fun">
-                    <div class="funheader">Fun</div>
-                    <p><a href="https://github.com/StuartAxelOwen/join">join</a></p>
-                    <p><a href="https://github.com/StuartAxelOwen/datastreams">datastreams</a></p>
-                    <p><a href="https://play.google.com/store/apps/details?id=com.brogramming.HoloCalc">HoloCalc</a></p>
-                    <p><a href="http://youtu.be/ldGRDaz3O_4">Resistive 3d Touch Panel</a></p>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1 class="subtitle">Work History</h1>
+                    <div class="container grid-container">
+                        <div class="grid-box" style="place-self: start;">
+                            <p><a href="https://www.taggit.io">Taggit</a><br>Founder<br>May 2018 - Present</p>
+                            <p><a href="https://www.thoughtvector.io">Thought Vector</a><br>Founder<br>Jan 2018 - Present</p>
+                            <p><a href="http://www.apptentive.com/">Apptentive</a><br>Senior Engineer<br>Jun 2015 - Dec 2017</p>
+                            <p><a href="http://www.informion.com/">Informion</a><br>Principal Engineer<br>Dec 2014 - Jun 2015</p>
+                        </div>
+                        <div class="grid-box" style="place-self: start;">
+                            <p><a href="https://www.giftstarter.com?stuartaxelbrooke">GiftStarter</a><br>Co-Founder<br>Mar 2014 -
+                                Dec 2014</p>
+                            <p><a href="http://app.truestyle.co">TRUE STYLE</a><br>Founder<br>Aug 2013 - Mar 2014</p>
+                            <p><a href="http://www.cypress.com/">Cypress Semiconductor</a><br>Sr. Applications Engineer<br>2010 -
+                                2013</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1 class="subtitle">Elsewhere On The Internet</h1>
+                    <p><a href="https://www.linkedin.com/in/stuartaxelbrooke">LinkedIn</a></p>
+                    <p><a href="http://stuart.axelbrooke.com/blog/">Blog</a></p>
+                    <p><a href="https://twitter.com/soaxelbrooke">Twitter</a></p>
+                    <p><a href="https://github.com/soaxelbrooke">GitHub</a></p>
                 </div>
             </div>
-            <div class="elsewhere">
-            	<div class="projectsheader">Elsewhere On The Internet</div>
-            	<div class="work">
-                    <div class="workheader">Work</div>
-	            <p><a href="https://www.linkedin.com/in/stuartaxelbrooke">LinkedIn</a></p>
-            	</div>
-            	<div class="fun">
-                    <div class="funheader">Fun</div>
-	            <p><a href="http://stuart.axelbrooke.com/blog/">Blog</a></p>
-	            <p><a href="https://twitter.com/soaxelbrooke">Twitter</a></p>
-	            <p><a href="https://github.com/soaxelbrooke">GitHub</a></p>
-            	</div>
-            </div>
-        </div>
-        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    </body>
+        </section>
+    </div>
+</body>
+
 </html>
