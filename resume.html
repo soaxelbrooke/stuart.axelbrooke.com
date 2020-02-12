@@ -1,0 +1,391 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,600|Roboto:400,500,700&display=swap" rel="stylesheet">
+        <style>
+body * {
+    font-family: Roboto, sans-serif;
+}
+
+@media print {
+    body * {
+        font-size: 12px;
+    }
+}
+
+body {
+    max-width: 9in;
+    margin: 0 auto;
+}
+
+h2.subtitle {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+.subsubtitle {
+    font-weight: 500;
+}
+
+section.header .top {
+    display: flex;
+    flex-direction: row;
+}
+section.header .title {
+    display: inline-block;
+    font-weight: 500;
+    font-family: 'Roboto Slab', Roboto, sans-serif;
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+section.header .contact {
+    flex: 1;
+    display: inline-block;
+    text-align: end;
+}
+section.header .contact a {
+    display: block;
+}
+section.header .subtitle {
+    margin-top: 0;
+    font-weight: 400;
+    font-family: 'Roboto Slab', Roboto, sans-serif;
+    font-size: 1em;
+}
+
+section.summary .summary {
+    margin-top: 1em;
+}
+
+/* Work Experience */
+.work-experience .job {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+.work-experience .job .summary {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+.work-experience .job .header {
+    color: #444;
+    font-size: 1.3em;
+}
+.work-experience .job .header .employer {
+    color: #000;
+}
+.work-experience .job .header .role::before, .period::before {
+    content: ' \2014  ';
+}
+.work-experience .job .skills-used {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+}
+.work-experience .job .skills-used .skills {
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+.work-experience .job .skills-used span {
+    padding: 0.25em 0.5em 0.25em 0;
+    width: 5em;
+}
+.work-experience .job .skills-used .skill {
+    border-radius: 0.5em;
+    background-color: #eee;
+    padding: 0.125em 0.5em;
+    margin: 0.125em 0;
+    display: inline-block;
+}
+
+article.project {
+    margin-top: 0.5em;
+}
+
+/* Fun Facts */
+.fun-facts, .highlights {
+    padding: 0;
+    margin: 0;
+}
+.fun-facts .fun-fact, .highlights .highlight {
+    margin-right: 0.8em;
+    display: inline-block;
+}
+.fun-facts .fun-fact::before, .highlights .highlight::before {
+    content: '\2014  '
+}
+
+        </style>
+    </head>
+    <body>
+        <section class="header">
+            <div class="top">
+                <div class="name">
+                    <h1 class="title">Stuart Owen Axelbrooke</h1>
+                    <h2 class="subtitle">Software Engineer in Natural Language Processing</h2>
+                </div>
+                <div class="contact">
+                    <a href="http://stuart.axelbrooke.com" class="website">stuart.axelbrooke.com</a>
+                    <a href="mailto:stuart@axelbrooke.com" class="email">stuart@axelbrooke.com</a>
+                    <span>(206)334-5138</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary">
+            <p class="summary">
+                Founder at Thought Vector, providing text classification and exploration tools for at-scale consumer feedback. Self-driven engineer with holistic product perspective applying NLP to high impact problems.
+            </p>
+        </section>
+
+        <section class="work-experience">
+            <h2 class="subtitle">Experience</h2>
+            <article class="job">
+                <div class="header">
+                    <span class="employer">Thought Vector</span>
+                    <span class="role">Founder</span>
+                    <span class="period">2018-01 to Present</span>
+                </div>
+                
+                <div class="details">
+                    <p class="summary">
+                        Thought Vector provides ML consulting and builds <a href="https://www.taggit.io">Taggit</a>, a text classification platform. Reduces text categorization time significantly for feedback analysis, and enables non-data scientists to perform accurate, fast exploratory text analysis.
+                    </p>
+                    <div class="skills-used">
+                        <span class="subsubtitle">Skills Used</span>
+                        <ul class="skills">
+                            <li class="skill">Python</li>
+                            <li class="skill">NLP</li>
+                            <li class="skill">Rust</li>
+                            <li class="skill">Javascript</li>
+                            <li class="skill">Keras</li>
+                            <li class="skill">SKLearn</li>
+                            <li class="skill">postgresql</li>
+                            <li class="skill">Google Cloud</li>
+                            <li class="skill">Kubernetes</li>
+                            <li class="skill">Docker</li>
+                            <li class="skill">Stripe</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="job">
+                <div class="header">
+                    <span class="employer">Apptentive</span>
+                    <span class="role">Senior Engineer</span>
+                    <span class="period">2015-06 to 2018-01 (2 years, 7 months)</span>
+                </div>
+                
+                <div class="details">
+                    <p class="summary">
+                        Spear-headed data products and data science. Delivered Insights product providing text exploration, boosting dashboard MAU 150%. Delivered quick-response predictor adopted by largest customers. Coordinated with product and customer success teams to define experiments and features.
+                    </p>
+                    <div class="skills-used">
+                        <span class="subsubtitle">Skills Used</span>
+                        <ul class="skills">
+                            <li class="skill">Python</li>
+                            <li class="skill">NLP</li>
+                            <li class="skill">Machine Learning</li>
+                            <li class="skill">Scala</li>
+                            <li class="skill">Javascript</li>
+                            <li class="skill">Ruby</li>
+                            <li class="skill">Keras</li>
+                            <li class="skill">SKLearn</li>
+                            <li class="skill">postgresql</li>
+                            <li class="skill">Cassandra</li>
+                            <li class="skill">Elasticsearch</li>
+                            <li class="skill">mongodb</li>
+                            <li class="skill">Spark</li>
+                            <li class="skill">Kubernetes</li>
+                            <li class="skill">Docker</li>
+                            <li class="skill">Kafka</li>
+                            <li class="skill">AWS</li>
+                            <li class="skill">Jenkins</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="job">
+                <div class="header">
+                    <span class="employer">Informion</span>
+                    <span class="role">Principal Engineer</span>
+                    <span class="period">2014-12 to 2015-06 (7 months)</span>
+                </div>
+                
+                <div class="details">
+                    <p class="summary">
+                        Lead small engineering team delivering push-re-engagement platform via text recommenders and search.
+                    </p>
+                    <div class="skills-used">
+                        <span class="subsubtitle">Skills Used</span>
+                        <ul class="skills">
+                            <li class="skill">Python</li>
+                            <li class="skill">Javascript</li>
+                            <li class="skill">NLP</li>
+                            <li class="skill">SKLearn</li>
+                            <li class="skill">Cassandra</li>
+                            <li class="skill">Lucene</li>
+                            <li class="skill">Spark</li>
+                            <li class="skill">Azure</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="job">
+                <div class="header">
+                    <span class="employer">Emotiv Labs</span>
+                    <span class="role">Co-Founder</span>
+                    <span class="period">2014-03 to 2014-12 (10 months)</span>
+                </div>
+                
+                <div class="details">
+                    <p class="summary">
+                        Built group gifting platform GiftStarter, including SPA front-end and real-time slot buying scalable backend. Managed 1 other backend engineer.
+                    </p>
+                    <div class="skills-used">
+                        <span class="subsubtitle">Skills Used</span>
+                        <ul class="skills">
+                            <li class="skill">Python</li>
+                            <li class="skill">Javascript</li>
+                            <li class="skill">AngularJS</li>
+                            <li class="skill">Google App Engine</li>
+                            <li class="skill">Cloud Data Store</li>
+                            <li class="skill">Stripe</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="job">
+                <div class="header">
+                    <span class="employer">TRUE STYLE</span>
+                    <span class="role">Founder</span>
+                    <span class="period">2013-08 to 2014-03 (8 months)</span>
+                </div>
+                
+                <div class="details">
+                    <p class="summary">
+                        Built a curated men's fashion shopping experience, leveraging machine learning to learn users' personal styles. 
+                    </p>
+                    <div class="skills-used">
+                        <span class="subsubtitle">Skills Used</span>
+                        <ul class="skills">
+                            <li class="skill">Python</li>
+                            <li class="skill">Machine Learning</li>
+                            <li class="skill">SKLearn</li>
+                            <li class="skill">Javascript</li>
+                            <li class="skill">AngularJS</li>
+                            <li class="skill">Google App Engine</li>
+                            <li class="skill">Cloud Data Store</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="job">
+                <div class="header">
+                    <span class="employer">Cypress Semiconductor</span>
+                    <span class="role">Senior Applications Engineer</span>
+                    <span class="period">2010-08 to 2013-08 (3 years)</span>
+                </div>
+                
+                <div class="details">
+                    <p class="summary">
+                        Designed and implemented complex signal processing systems via Cypress' programmable system-on-a-chip for large scale customers. Applications include cardiac-wall conductance measurement, low-power sonar, and 3D-touch mobile touchscreen measurement.
+                    </p>
+                    <div class="skills-used">
+                        <span class="subsubtitle">Skills Used</span>
+                        <ul class="skills">
+                            <li class="skill">C</li>
+                            <li class="skill">Assembly</li>
+                            <li class="skill">Python</li>
+                            <li class="skill">VHDL</li>
+                            <li class="skill">Verilog</li>
+                            <li class="skill">Perl</li>
+                            <li class="skill">Oscilloscopes</li>
+                            <li class="skill">ARM</li>
+                            <li class="skill">ADCs</li>
+                            <li class="skill">DACs</li>
+                            <li class="skill">Analog Front Ends</li>
+                            <li class="skill">Custom Digital Filters</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="papers-and-patents">
+            <h2 class="subtitle">Papers and Patents</h2>
+            <span>
+                <span class="subsubtitle">Patent</span> <a href="https://patents.google.com/patent/US8990455B1/en">
+                    Offloading tasks from a central processing unit to peripheral function engines
+                </a>
+            </span>
+        </section>
+
+        <section class="projects">
+            <h2 class="subtitle">Projects</h2>
+
+            <article class="project">
+                <p class="subsubtitle">NLSea - Seattle NLP Meetup</p>
+                <ul class="highlights">
+                    <li class="highlight">70-80 RSVPs per meetup</li>
+                    <li class="highlight">Avg 4.8 star rating on meetup.com</li>
+                    <li class="highlight">2019-04 to Present</li>
+                </ul>
+            </article>
+
+            <article class="project">
+                <p class="subsubtitle"><a href="https://github.com/soaxelbrooke/python-bpe" class="href">python-bpe</a> - Byte Pair Encoding in pure Python</p>
+                <ul class="highlights">
+                    <li class="highlight">113 Github stars</li>
+                    <li class="highlight">~128 downloads/week</li>
+                </ul>
+            </article>
+
+            <article class="project">
+                <p class="subsubtitle"><a href="https://github.com/soaxelbrooke/python-bpe" class="href">phrase</a> - Super fast phrase extraction tool</p>
+                <ul class="highlights">
+                    <li class="highlight">25 Github stars</li>
+                    <li class="highlight">Counts 780k tokens per second per core</li>
+                    <li class="highlight">Implemented in Rust</li>
+                </ul>
+            </article>
+
+            <article class="project">
+                <p class="subsubtitle"><a href="http://stuart.axelbrooke.com/browser-sentiment/" class="href">Browser Sentiment</a> - In-browser sentiment analysis library</p>
+                <ul class="highlights">
+                    <li class="highlight">Trained in keras, exported to TF.js</li>
+                    <li class="highlight">Classifies 100 reviews/sec (sentence-level, single threaded)</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="education">
+            <h2 class="subtitle">Education</h2>
+            BS Electrical Engineering from Washington State University, 2005-2010.
+        </section>
+
+        <section class="fun-facts">
+            <h2 class="subtitle">Fun Facts</h2>
+            <ul class="fun-facts">
+                <li class="fun-fact">Recently lived in Japan for ~3 years</li>
+                <li class="fun-fact">Amateur photographer</li>
+                <li class="fun-fact">Avid climber</li>
+                <li class="fun-fact">Engineer crush: Claude Shannon</li>
+            </ul>
+        </section>
+    </body>
+</html>
