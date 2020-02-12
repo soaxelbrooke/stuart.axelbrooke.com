@@ -8,7 +8,7 @@ The one, the only, dude named Stuart Axelbrooke.
 sudo ln -s $(pwd)/stuart.axelbrooke.com.conf /etc/nginx/conf.d/
 # Then link site assets
 sudo mkdir -p /var/www/stuart.axelbrooke.com
-sudo ln -s $(pwd)/index.html $(pwd)/bulma.css $(pwd)/assets $(pwd)/browser-sentiment /var/www/stuart.axelbrooke.com/
+sudo ln -s $(pwd)/index.html $(pwd)/resume.html $(pwd)/bulma.css $(pwd)/assets $(pwd)/browser-sentiment /var/www/stuart.axelbrooke.com/
 ```
 
 ## SSL Certs
