@@ -117,6 +117,10 @@ article.project {
     padding: 0;
     margin: 0;
 }
+ul.fun-facts {
+    display: flex;
+    justify-content: space-between;
+}
 .fun-facts .fun-fact, .highlights .highlight {
     margin-right: 0.8em;
     display: inline-block;
@@ -132,11 +136,13 @@ article.project {
             <div class="top">
                 <div class="name">
                     <h1 class="title">Stuart Owen Axelbrooke</h1>
-                    <h2 class="subtitle">Software Engineer in Natural Language Processing</h2>
+                    <h2 class="subtitle">Sr Software Engineer in Machine Learning</h2>
                 </div>
                 <div class="contact">
                     <a href="http://stuart.axelbrooke.com" class="website">stuart.axelbrooke.com</a>
                     <a href="mailto:stuart@axelbrooke.com" class="email">stuart@axelbrooke.com</a>
+                    <a href="https://github.com/soaxelbrooke/" class="website">https://github.com/soaxelbrooke</a>
+                    <a href="https://www.linkedin.com/in/stuartaxelbrooke/" class="website">https://www.linkedin.com/in/stuartaxelbrooke</a>
                     <span>(206)334-5138</span>
                 </div>
             </div>
@@ -144,12 +150,49 @@ article.project {
 
         <section class="summary">
             <p class="summary">
-                Founder at Thought Vector, providing text classification and exploration tools for at-scale consumer feedback. Self-driven engineer with holistic product perspective applying NLP to high impact problems.
+                <span class="highlight">Senior Machine Learning Engineer</span> with <b>13 years</b> experience including <b>Amazon</b> and <b>Startups</b>, using <b>Machine Learning, Cloud, Kubernetes, and Big Data</b> to deliver <b>&gt; $100M in annual revenue increases and significant boosts to user retention and reduction in customer returns</b>.
             </p>
         </section>
 
         <section class="work-experience">
             <h2 class="subtitle">Experience</h2>
+            
+            <article class="job">
+                <div class="header">
+                    <span class="employer">Amazon</span>
+                    <span class="role">SDE-III (L6)</span>
+                    <span class="period">2020-07 to 2022-12</span>
+                </div>
+                
+                <div class="details">
+                    <p class="summary">
+                        Lead relevance improvement and recommendation qualification for <a href="https://www.amazon.com/b?ie=UTF8&node=21449952011">Amazon's Choice</a> (AC) recommendations. Pitched, designed, and implemented a relevance classifier to reduce relevance defect rate by 25% while increasing revenue by $180M anually and reducing returns on AC purchases by 3.5%.
+                    </p>
+                    <div class="skills-used">
+                        <span class="subsubtitle">Skills Used</span>
+                        <ul class="skills">
+                            <li class="skill">Machine Learning</li>
+                            <li class="skill">Recommender Systems</li>
+                            <li class="skill">Spark</li>
+                            <li class="skill">Search Ranking</li>
+                            <li class="skill">Strategic Tech Planning</li>
+                            <li class="skill">AWS</li>
+                            <li class="skill">EMR</li>
+                            <li class="skill">CDK</li>
+                            <li class="skill">Java</li>
+                            <li class="skill">Python</li>
+                            <li class="skill">Scala</li>
+                            <li class="skill">A/B Testing</li>
+                            <li class="skill">NLP</li>
+                            <li class="skill">ML Dataset Building</li>
+                            <li class="skill">Sampling</li>
+                            <li class="skill">SQL</li>
+                            <li class="skill">Elasticsearch</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
             <article class="job">
                 <div class="header">
                     <span class="employer">Thought Vector</span>
@@ -159,18 +202,20 @@ article.project {
                 
                 <div class="details">
                     <p class="summary">
-                        Thought Vector provides ML consulting and builds <a href="https://www.taggit.io">Taggit</a>, a text classification platform. Reduces text categorization time significantly for feedback analysis, and enables non-data scientists to perform accurate, fast exploratory text analysis.
+                        Thought Vector provides ML consulting and builds <a href="https://www.taggit.io">Taggit</a>, a text classification platform. Taggit reduces text categorization time significantly for feedback analysis, and enables non-data scientists to perform accurate, fast exploratory text analysis.
                     </p>
                     <div class="skills-used">
                         <span class="subsubtitle">Skills Used</span>
                         <ul class="skills">
                             <li class="skill">Python</li>
+                            <li class="skill">ML Ops</li>
                             <li class="skill">NLP</li>
                             <li class="skill">Rust</li>
                             <li class="skill">Javascript</li>
                             <li class="skill">Keras</li>
                             <li class="skill">SKLearn</li>
                             <li class="skill">postgresql</li>
+                            <li class="skill">SQL</li>
                             <li class="skill">Google Cloud</li>
                             <li class="skill">Kubernetes</li>
                             <li class="skill">Docker</li>
@@ -231,6 +276,7 @@ article.project {
                     <div class="skills-used">
                         <span class="subsubtitle">Skills Used</span>
                         <ul class="skills">
+                            <li class="skill">Recommender Systems</li>
                             <li class="skill">Python</li>
                             <li class="skill">Javascript</li>
                             <li class="skill">NLP</li>
@@ -340,18 +386,19 @@ article.project {
             <h2 class="subtitle">Projects</h2>
 
             <article class="project">
-                <p class="subsubtitle">NLSea - Seattle NLP Meetup</p>
+                <p class="subsubtitle">NLSea + AToM - Seattle ML/NLP Meetups Organizer</p>
                 <ul class="highlights">
                     <li class="highlight">70-80 RSVPs per meetup</li>
                     <li class="highlight">Avg 4.8 star rating on meetup.com</li>
-                    <li class="highlight">2019-04 to Present</li>
+                    <li class="highlight">2019-04 to Present (on hiatus during pandemic)</li>
+                    <li class="highlight"><a href="https://www.youtube.com/watch?v=hAvtJ516Mw4&t=184s">Example tokenization talk</a></li>
                 </ul>
             </article>
 
             <article class="project">
                 <p class="subsubtitle"><a href="https://github.com/soaxelbrooke/python-bpe" class="href">python-bpe</a> - Byte Pair Encoding in pure Python</p>
                 <ul class="highlights">
-                    <li class="highlight">113 Github stars</li>
+                    <li class="highlight">197 Github stars</li>
                     <li class="highlight">~128 downloads/week</li>
                 </ul>
             </article>
@@ -359,32 +406,32 @@ article.project {
             <article class="project">
                 <p class="subsubtitle"><a href="https://github.com/soaxelbrooke/phrase" class="href">phrase</a> - Super fast phrase extraction tool</p>
                 <ul class="highlights">
-                    <li class="highlight">25 Github stars</li>
+                    <li class="highlight">31 Github stars</li>
                     <li class="highlight">Counts 780k tokens per second per core</li>
                     <li class="highlight">Implemented in Rust</li>
                 </ul>
             </article>
 
             <article class="project">
-                <p class="subsubtitle"><a href="http://stuart.axelbrooke.com/browser-sentiment/" class="href">Browser Sentiment</a> - In-browser sentiment analysis library</p>
+                <p class="subsubtitle"><a href="https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter" class="href">Customer Support on Twitter Dataset</a> - Conversational dataset of high value business-to-customer interactions</p>
                 <ul class="highlights">
-                    <li class="highlight">Trained in keras, exported to TF.js</li>
-                    <li class="highlight">Classifies 100 reviews/sec (sentence-level, single threaded)</li>
+                    <li class="highlight">Cited > 50 times on Google Scholar</li>
+                    <li class="highlight">442 upvotes, 62 notebooks on Kaggle</li>
+                    <li class="highlight">Awarded highest medal on Kaggle (Gold)</li>
                 </ul>
             </article>
         </section>
 
         <section class="education">
             <h2 class="subtitle">Education</h2>
-            BS Electrical Engineering from Washington State University, 2005-2010.
+            BS Electrical Engineering from Washington State University, graduated 2010.
         </section>
 
         <section class="fun-facts">
             <h2 class="subtitle">Fun Facts</h2>
             <ul class="fun-facts">
-                <li class="fun-fact">Recently lived in Japan for ~3 years</li>
+                <li class="fun-fact">Lived in Japan for ~3 years</li>
                 <li class="fun-fact">Amateur photographer</li>
-                <li class="fun-fact">Avid climber</li>
                 <li class="fun-fact">Engineer crush: Claude Shannon</li>
             </ul>
         </section>
