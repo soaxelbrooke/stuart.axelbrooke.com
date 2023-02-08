@@ -1,3 +1,2 @@
 
-scp -r stuart.axelbrooke.com.conf index.html resume.html bulma.css assets/ browser-sentiment/ root@remote.axb:/root/code/stuart.axelbrooke.com/
-
+rsync -avzh --exclude .git ./ root@108.61.194.137:/root/caddy/sites/stuart.axelbrooke.com/
