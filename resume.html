@@ -48,14 +48,17 @@ section.header .title {
     margin-top: 0;
 }
 section.header .name {
-    flex: 1;
+    flex: 2;
 }
 section.header .contact {
     flex: 1;
     display: inline-block;
     text-align: end;
 }
-section.header .contact a {
+section.header .contact.left {
+    flex: 0.5;
+}
+section.header .contact > a {
     display: block;
 }
 section.header .subtitle {
@@ -65,8 +68,19 @@ section.header .subtitle {
     font-size: 1em;
 }
 
+section.summary {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
 section.summary .summary {
     margin-top: 1em;
+}
+
+section.summary h3 {
+    padding: 0;
+    margin: 0;
 }
 
 /* Work Experience */
@@ -81,29 +95,42 @@ section.summary .summary {
 .work-experience .job .header {
     color: #444;
     font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
 }
 .work-experience .job .header .employer {
     font-weight: 500;
     color: #000;
+    text-decoration: underline;
 }
 .work-experience .job .header .role::before, .period::before {
-    content: ' \2014  ';
+    /* content: ' \2014  '; */
 }
-.work-experience .job .skills-used {
-    padding-left: 0;
+.work-experience .job .bullets {
     display: flex;
     flex-direction: row;
+    /* gap: 1em; */
 }
-.work-experience .job .skills-used .skills {
+.work-experience .job .bullets ul {
+    flex: 1;
+}
+.work-experience .job .bullets ul {
+    margin: 0;
+}
+
+.skills-used {
+    padding-left: 0;
+}
+.skills-used .skills {
     padding: 0;
     margin: 0;
     flex: 1;
 }
-.work-experience .job .skills-used span {
+.skills-used span {
     padding: 0.25em 0.5em 0.25em 0;
     width: 5em;
 }
-.work-experience .job .skills-used .skill {
+.skills-used .skill {
     border-radius: 0.5em;
     background-color: #eee;
     padding: 0.125em 0.5em;
@@ -139,57 +166,57 @@ ul.fun-facts {
             <div class="top">
                 <div class="name">
                     <h1 class="title">Stuart Owen Axelbrooke</h1>
-                    <h2 class="subtitle">Senior Machine Learning Engineer (12 years) with proven record of increasing revenue and engagement.</h2>
+                    <h2 class="subtitle">Senior Machine Learning Engineer</h2>
                 </div>
-                <div class="contact">
-                    <a href="http://stuart.axelbrooke.com" class="website">stuart.axelbrooke.com</a>
+                <div class="contact left">
                     <a href="mailto:stuart@axelbrooke.com" class="email">stuart@axelbrooke.com</a>
-                    <a href="https://github.com/soaxelbrooke/" class="website">https://github.com/soaxelbrooke</a>
-                    <a href="https://www.linkedin.com/in/stuartaxelbrooke/" class="linkedin">https://www.linkedin.com/in/stuartaxelbrooke</a>
                     <a href="tel:+12063345138" class="phone">(206)334-5138</a>
+                </div>
+                <div class="contact right">
+                    <a href="http://stuart.axelbrooke.com" class="website">stuart.axelbrooke.com</a>
+                    <div>Github: <a href="https://github.com/soaxelbrooke/" class="website">soaxelbrooke</a></div>
+                    <div>LinkedIn: <a href="https://www.linkedin.com/in/stuartaxelbrooke/" class="linkedin">stuartaxelbrooke</a></div>
                 </div>
             </div>
         </section>
 
-        <!-- <section class="summary">
-            <p class="summary">
-                Senior Machine Learning Engineer with <b>13 years</b> experience including <b>Amazon</b> and <b>Startups</b>, applying <b>Machine Learning, Cloud, Kubernetes, and Big Data</b> to deliver <b>&gt; $100M in annual revenue increases and significant boosts to user retention and reduction in customer returns</b>.
-            </p>
-        </section> -->
+        <section class="summary">
+            <div class="summary" style="flex: 1;">
+                <h3>Past</h3>
+                Senior Machine Learning Engineer with 12 years experience including Amazon and Startups, applying Machine Learning, Cloud, Kubernetes, and Big Data technologies to deliver &gt; $100M in annual revenue increases and significant boosts to user retention.
+            </div>
+            <div class="summary" style="flex: 1;">
+                <h3>Future</h3>
+                Seeking Senior/Staff Machine Learning Engineer positions leading tech, growing/mentoring junior and mid-level engineers, and delivering high-impact solutions and architectures in ambiguous problem spaces.
+            </div>
+        </section>
 
         <section class="work-experience">
             <h2 class="subtitle">Experience</h2>
             
             <article class="job">
                 <div class="header">
-                    <span class="employer">Amazon</span>
-                    <span class="role">SDE-III (L6)</span>
+                    <div class="job-header">
+                        <span class="employer">Amazon</span>
+                        <span class="role">Senior Machine Learning Engineer (L6)</span>
+                    </div>
                     <span class="period">2020-07 to 2022-12 (2 years, 6 months)</span>
                 </div>
                 
                 <div class="details">
                     <p class="summary">
-                        Lead relevance improvement and recommendation qualification for <a href="https://www.amazon.com/b?ie=UTF8&node=21449952011">Amazon's Choice</a> (AC) recommendations. Proposed, designed, trained, and productionized a relevance classifier to <b>reduce relevance defect rate by 25%</b> while <b>increasing revenue by $180M</b> (per year) and <b>reducing returns by 3.5%</b> on AC purchases. Authored tech roadmaps and architectures for relevance and qualification systems.
-                    </p>
-                    <div class="skills-used">
-                        <span class="subsubtitle">Skills Used</span>
-                        <ul class="skills">
-                            <li class="skill">Machine Learning</li>
-                            <li class="skill">Recommender Systems</li>
-                            <li class="skill">Spark</li>
-                            <li class="skill">Search Ranking</li>
-                            <li class="skill">Strategic Tech Planning</li>
-                            <li class="skill">AWS</li>
-                            <li class="skill">EMR</li>
-                            <li class="skill">CDK</li>
-                            <li class="skill">Java</li>
-                            <li class="skill">Python</li>
-                            <li class="skill">Scala</li>
-                            <li class="skill">A/B Testing</li>
-                            <li class="skill">NLP</li>
-                            <li class="skill">Sampling</li>
-                            <li class="skill">SQL</li>
-                            <li class="skill">Elasticsearch</li>
+                        Lead Relevance and Trust/Qualification pillars for <a href="https://www.amazon.com/b?ie=UTF8&node=21449952011">Amazon's Choice</a> (AC), improving the quality of recommendations.
+                    <div class="bullets">
+                        <ul>
+                            <li>Proposed, designed, trained, and productionized a tabular and text-based relevance classifier</li>
+                            <li>Increased annual revenue by $180M</li>
+                            <li>Reduced returns on AC purchases by 3.5%</li>
+                            <li>Reduce AC relevance defect rate by 25%</li>
+                        </ul>
+                        <ul>
+                            <li>Authored tech roadmaps and architectures, reducing system complexity and improving org velocity</li>
+                            <li>Mentored junior engineers and created/ran tech talk series for professional growth and knowledge sharing</li>
+                            <li>Lead team of 8 engineers delivering ML, pipelines, and API projects</li>
                         </ul>
                     </div>
                 </div>
@@ -197,32 +224,28 @@ ul.fun-facts {
 
             <article class="job">
                 <div class="header">
-                    <span class="employer">Thought Vector</span>
-                    <span class="role">Founder</span>
+                    <div class="job-header">
+                        <span class="employer">Thought Vector</span>
+                        <span class="role">Founder</span>
+                    </div>
                     <span class="period">2018-01 to Present</span>
                 </div>
                 
                 <div class="details">
                     <p class="summary">
-                        Thought Vector provides ML solutions consulting and builds <a href="https://www.taggit.io">Taggit</a>, a no-code <b>text classification platform</b>. Taggit enables review classification, content moderation, sentiment analysis, etc., and enables non-data scientists to perform accurate and fast exploratory text analysis and quantification.
+                        Solo-founder at Thought Vector, building out ML products and providing ML consulting.
                     </p>
-                    <div class="skills-used">
-                        <span class="subsubtitle">Skills Used</span>
-                        <ul class="skills">
-                            <li class="skill">Python</li>
-                            <li class="skill">ML Ops</li>
-                            <li class="skill">NLP</li>
-                            <li class="skill">Computer Vision</li>
-                            <li class="skill">Rust</li>
-                            <li class="skill">Javascript</li>
-                            <li class="skill">Keras</li>
-                            <li class="skill">SKLearn</li>
-                            <li class="skill">postgresql</li>
-                            <li class="skill">SQL</li>
-                            <li class="skill">Google Cloud</li>
-                            <li class="skill">Kubernetes</li>
-                            <li class="skill">Docker</li>
-                            <li class="skill">Stripe</li>
+                    <div class="bullets">
+                        <ul>
+                            <li>Builds <a href="https://www.taggit.io">Taggit</a>, a no-code text classification platform</li>
+                            <li>Built automatic model training, model eval, active learning, and online inference systems</li>
+                            <li>Built full-service text-tagging and dataset management system</li>
+                            <li>Built backend (Python/PyTorch) and frontend</li>
+                        </ul>
+                        <ul>
+                            <li>Taggit targets feedback quantification, content moderation, topic modeling, etc applications.</li>
+                            <li>Delivered object detection/image classification system for identifying specific shoes from consumer photos</li>
+                            <li>Built smart config-driven scraper for continuous and efficient data collection from Apple, Twitter, etc</li>
                         </ul>
                     </div>
                 </div>
@@ -230,36 +253,28 @@ ul.fun-facts {
 
             <article class="job">
                 <div class="header">
-                    <span class="employer">Apptentive</span>
-                    <span class="role">Senior Engineer</span>
+                    <div class="job-header">
+                        <span class="employer">Apptentive</span>
+                        <span class="role">Senior Machine Learning Engineer</span>
+                    </div>
                     <span class="period">2015-06 to 2018-01 (2 years, 7 months)</span>
                 </div>
                 
                 <div class="details">
                     <p class="summary">
-                        Spear-headed data products and data science. Delivered <b>NLP-powered</b> Insights product providing text exploration, <b>boosting dashboard MAU 150%</b>. Delivered quick-response predictor adopted by largest customers. Coordinated with product and customer success teams to define experiments and features.
+                        Spear-headed creation of data science and machine learning products. 
                     </p>
-                    <div class="skills-used">
-                        <span class="subsubtitle">Skills Used</span>
-                        <ul class="skills">
-                            <li class="skill">Python</li>
-                            <li class="skill">NLP</li>
-                            <li class="skill">Machine Learning</li>
-                            <li class="skill">Scala</li>
-                            <li class="skill">Javascript</li>
-                            <li class="skill">Ruby</li>
-                            <li class="skill">Keras</li>
-                            <li class="skill">SKLearn</li>
-                            <li class="skill">postgresql</li>
-                            <li class="skill">Cassandra</li>
-                            <li class="skill">Elasticsearch</li>
-                            <li class="skill">mongodb</li>
-                            <li class="skill">Spark</li>
-                            <li class="skill">Kubernetes</li>
-                            <li class="skill">Docker</li>
-                            <li class="skill">Kafka</li>
-                            <li class="skill">AWS</li>
-                            <li class="skill">Jenkins</li>
+                    <div class="bullets">
+                        <ul>
+                            <li>Delivered NLP-powered Insights product providing text exploration, boosting dashboard MAU 150%</li>
+                            <li>Designed and delivered Love Report data product, forming basis for white glove data services</li>
+                            <li>Delivered quick-response predictor adopted by largest customers to reduce support costs</li>
+                        </ul>
+                        <ul>
+                            <li>Proposed and delivered phrase extraction/topic model</li>
+                            <li>Proposed and delivered sentinement classifier</li>
+                            <li>Coordinated with product and customer success teams to define experiments and features</li>
+                            <li>Lead teams of 2-3 engineers to deliver data/ML projects</li>
                         </ul>
                     </div>
                 </div>
@@ -267,27 +282,26 @@ ul.fun-facts {
 
             <article class="job">
                 <div class="header">
-                    <span class="employer">Informion</span>
-                    <span class="role">Principal Engineer</span>
+                    <div class="job-header">
+                        <span class="employer">Informion</span>
+                        <span class="role">Founding Machine Learning Engineer</span>
+                    </div>
                     <span class="period">2014-12 to 2015-06 (7 months)</span>
                 </div>
                 
                 <div class="details">
                     <p class="summary">
-                        Lead small engineering team delivering push-re-engagement platform via text recommenders and search.
+                        Built out data pipelines for product recommendation push re-engagement SaaS product.
                     </p>
-                    <div class="skills-used">
-                        <span class="subsubtitle">Skills Used</span>
-                        <ul class="skills">
-                            <li class="skill">Recommender Systems</li>
-                            <li class="skill">Python</li>
-                            <li class="skill">Javascript</li>
-                            <li class="skill">NLP</li>
-                            <li class="skill">SKLearn</li>
-                            <li class="skill">Cassandra</li>
-                            <li class="skill">Lucene</li>
-                            <li class="skill">Spark</li>
-                            <li class="skill">Azure</li>
+                    <div class="bullets">
+                        <ul>
+                            <li>Built candidate set via information retrieval and full-text search techniques</li>
+                            <li>Created search-based personalization/recommender system</li>
+                        </ul>
+                        <ul>
+                            <li>Created engineering process reducing incident rates significantly</li>
+                            <li>Implemented recommendation quality metrics</li>
+                            <li>Lead team of 2 engineers</li>
                         </ul>
                     </div>
                 </div>
@@ -295,8 +309,10 @@ ul.fun-facts {
 
             <article class="job">
                 <div class="header">
-                    <span class="employer">Emotiv Labs</span>
-                    <span class="role">Co-Founder</span>
+                    <div class="job-header">
+                        <span class="employer">Emotiv Labs</span>
+                        <span class="role">Co-Founder, CTO</span>
+                    </div>
                     <span class="period">2014-03 to 2014-12 (10 months)</span>
                 </div>
                 
@@ -304,15 +320,14 @@ ul.fun-facts {
                     <p class="summary">
                         Built group gifting platform GiftStarter, including SPA front-end and real-time slot buying scalable backend. Managed 1 other backend engineer.
                     </p>
-                    <div class="skills-used">
-                        <span class="subsubtitle">Skills Used</span>
-                        <ul class="skills">
-                            <li class="skill">Python</li>
-                            <li class="skill">Javascript</li>
-                            <li class="skill">AngularJS</li>
-                            <li class="skill">Google App Engine</li>
-                            <li class="skill">Cloud Data Store</li>
-                            <li class="skill">Stripe</li>
+                    <div class="bullets">
+                        <ul>
+                            <li>Built real-time slot reservation/selling system on Google Cloud Platform</li>
+                            <li>Authored Javascript front-end and initial Python back-end</li>
+                        </ul>
+                        <ul>
+                            <li>Created embedded tag for e-commerce partners to enable cross-site group gifting</li>
+                            <li>Lead 1 back-end engineer</li>
                         </ul>
                     </div>
                 </div>
@@ -320,25 +335,23 @@ ul.fun-facts {
 
             <article class="job">
                 <div class="header">
-                    <span class="employer">TRUE STYLE</span>
-                    <span class="role">Founder</span>
+                    <div class="job-header">
+                        <span class="employer">TRUE STYLE</span>
+                        <span class="role">Founder</span>
+                    </div>
                     <span class="period">2013-08 to 2014-03 (8 months)</span>
                 </div>
                 
                 <div class="details">
                     <p class="summary">
-                        Built a curated men's fashion shopping experience, leveraging machine learning to learn users' personal styles. 
+                        TRUE STYLE was a personalized men's fashion shopping experience that learned user preferences.
                     </p>
-                    <div class="skills-used">
-                        <span class="subsubtitle">Skills Used</span>
-                        <ul class="skills">
-                            <li class="skill">Python</li>
-                            <li class="skill">Machine Learning</li>
-                            <li class="skill">SKLearn</li>
-                            <li class="skill">Javascript</li>
-                            <li class="skill">AngularJS</li>
-                            <li class="skill">Google App Engine</li>
-                            <li class="skill">Cloud Data Store</li>
+                    <div class="bullets">
+                        <ul>
+                            <li>Built product and brand recommender system based on user behavior</li>
+                        </ul>
+                        <ul>
+                            <li>Integrated with external affiliate marketing systems</li>
                         </ul>
                     </div>
                 </div>
@@ -346,34 +359,64 @@ ul.fun-facts {
 
             <article class="job">
                 <div class="header">
-                    <span class="employer">Cypress Semiconductor</span>
-                    <span class="role">Senior Applications Engineer</span>
+                    <div class="job-header">
+                        <span class="employer">Cypress Semiconductor</span>
+                        <span class="role">Senior Applications Engineer</span>
+                    </div>
                     <span class="period">2010-08 to 2013-08 (3 years)</span>
                 </div>
                 
                 <div class="details">
                     <p class="summary">
-                        Designed and implemented complex signal processing systems via Cypress' programmable system-on-a-chip for large scale customers. Applications include cardiac-wall conductance measurement, low-power sonar, and 3D-touch mobile touchscreen measurement.
+                        Designed and implemented complex signal processing systems via Cypress' programmable system-on-a-chip for large scale external customers. Applications include cardiac-wall conductance measurement, low-power sonar, and 3D-touch mobile touchscreen measurement.
                     </p>
-                    <div class="skills-used">
-                        <span class="subsubtitle">Skills Used</span>
-                        <ul class="skills">
-                            <li class="skill">C</li>
-                            <li class="skill">Assembly</li>
-                            <li class="skill">Python</li>
-                            <li class="skill">VHDL</li>
-                            <li class="skill">Verilog</li>
-                            <li class="skill">Perl</li>
-                            <li class="skill">Oscilloscopes</li>
-                            <li class="skill">ARM</li>
-                            <li class="skill">ADCs</li>
-                            <li class="skill">DACs</li>
-                            <li class="skill">Analog Front Ends</li>
-                            <li class="skill">Custom Digital Filters</li>
-                        </ul>
-                    </div>
                 </div>
             </article>
+        </section>
+
+        <section class="skills">
+            <div class="skills-used">
+                <h2 class="subtitle">Skills</h2>
+                <ul class="skills">
+                    <li class="skill">Python</li>
+                    <li class="skill">PyTorch</li>
+                    <li class="skill">Tensorflow</li>
+                    <li class="skill">NLP</li>
+                    <li class="skill">Text Classification</li>
+                    <li class="skill">Model Deployment</li>
+                    <li class="skill">Model Productionization</li>
+                    <li class="skill">Feature Engineering</li>
+                    <li class="skill">Text Embedding / Word2vec</li>
+                    <li class="skill">Sentiment Analysis</li>
+                    <li class="skill">Spark</li>
+                    <li class="skill">Recommender Systems</li>
+                    <li class="skill">Java</li>
+                    <li class="skill">AWS</li>
+                    <li class="skill">EMR</li>
+                    <li class="skill">CDK</li>
+                    <li class="skill">Communication</li>
+                    <li class="skill">Docker</li>
+                    <li class="skill">Kubernetes</li>
+                    <li class="skill">Deep Learning</li>
+                    <li class="skill">Topic Modeling</li>
+                    <li class="skill">Scala</li>
+                    <li class="skill">A/B Testing</li>
+                    <li class="skill">SQL</li>
+                    <li class="skill">Data Science</li>
+                    <li class="skill">Data Engineering</li>
+                    <li class="skill">Language Modeling</li>
+                    <li class="skill">Trust Modeling</li>
+                    <li class="skill">Relevance Modeling</li>
+                    <li class="skill">Information Retrieval</li>
+                    <li class="skill">Data Structures</li>
+                    <li class="skill">Algorithms</li>
+                    <li class="skill">Linux</li>
+                    <li class="skill">CI/CD</li>
+                    <li class="skill">ML Lifecycle</li>
+                    <li class="skill">Big Data</li>
+                    <li class="skill">E-Commerce</li>
+                </ul>
+            </div>
         </section>
 
         <section class="papers-and-patents">
@@ -401,7 +444,7 @@ ul.fun-facts {
             <article class="project">
                 <p class="subsubtitle"><a href="https://github.com/soaxelbrooke/python-bpe" class="href">python-bpe</a> - Byte Pair Encoding in pure Python</p>
                 <ul class="highlights">
-                    <li class="highlight">197 Github stars</li>
+                    <li class="highlight">200 Github stars</li>
                     <li class="highlight">~128 downloads/week</li>
                 </ul>
             </article>
@@ -410,7 +453,7 @@ ul.fun-facts {
                 <p class="subsubtitle"><a href="https://github.com/soaxelbrooke/phrase" class="href">phrase</a> - Super fast phrase extraction tool</p>
                 <ul class="highlights">
                     <li class="highlight">31 Github stars</li>
-                    <li class="highlight">Counts 780k tokens per second per core</li>
+                    <li class="highlight">Fast: Counts 780k tokens per second per core</li>
                     <li class="highlight">Implemented in Rust</li>
                 </ul>
             </article>
