@@ -6,6 +6,7 @@
 
     <link href="http://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet" type="text/css">
     <link href="/bulma.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/bulma-social.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- for Google -->
     <meta name="description"
@@ -66,23 +67,30 @@
             font-size: 24px !important;
         }
 
+        .social-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 1em;
+        }
+
         body * {
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
         }
 
         .image.me img {
-            max-width: 150px;
+            /* max-width: 240px; */
             border-radius: 8px;
         }
 
         .top-hero .hero-body .container {
-            display: flex;
+            /* display: flex; */
         }
 
         .hero-body .bio {
             padding-left: 2em;
-            flex: 1;
+            /* flex: 1; */
         }
 
         .grid-container {
@@ -140,22 +148,27 @@
         <section class="hero is-medium top-hero" style="margin-bottom: 0;">
             <div class="hero-body">
                 <div class="container">
-                    <div class="image me">
-                        <img src="assets/me.jpg" alt="Stuart Axelbrooke">
-                    </div>
-                    <div class="bio">
-                        <div class="content">
-                            <h1 class="title">
-                                Stuart Axelbrooke
-                            </h1>
-                            <h2 class="subtitle">
-                                Founder at Thought Vector
-                            </h2>
-                            <p>
-                                Stuart Axelbrooke is the Founder of Thought Vector in Seattle. He provides machine
-                                learning and natural language processing solutions that power large-scale text
-                                understanding and decision making.
-                            </p>
+                    <div class="columns">
+                        <div class="image me column">
+                            <img src="assets/me.jpg" alt="Stuart Axelbrooke">
+                        </div>
+                        <div class="bio column">
+                            <div class="content">
+                                <h1 class="has-text-centered">
+                                    <span class="name is-size-1-mobile is-size-2">Stuart Axelbrooke</span>
+                                </h1>
+                                <div class="social-links is-size-5-mobile">
+                                    <a class="social-link" href="https://www.github.com/soaxelbrooke">GitHub</a>
+                                    <a class="social-link" href="https://www.linkedin.com/in/stuartaxelbrooke/">LinkedIn</a>
+                                    <a class="social-link" href="/resume.html">Resume</a>
+                                </div>
+                                <p class="is-size-5-mobile">
+                                    Senior Machine Learning Engineer with 12 years experience including Amazon and Startups, applying Machine Learning, Cloud, Kubernetes, and Big Data technologies to deliver > $100M in annual revenue increases and significant boosts to user retention. 
+                                </p>
+                                <p class="is-size-5-mobile">
+                                    Seeking Senior/Staff Machine Learning Engineer positions leading tech, growing/mentoring junior and mid-level engineers, and delivering high-impact solutions and architectures in ambiguous problem spaces. 
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
