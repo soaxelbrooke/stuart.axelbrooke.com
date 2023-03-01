@@ -20,7 +20,12 @@ body {
 h2.subtitle {
     font-size: 1.5em;
     font-weight: 400;
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid LightGray;
+}
+
+section.header h2.subtitle {
+    border-bottom: 0px;
 }
 
 p {
@@ -68,19 +73,15 @@ section.header .subtitle {
     font-size: 1em;
 }
 
-section.summary {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
-
-section.summary .summary {
-    margin-top: 1em;
+section.summary div:nth-child(2) {
+    margin-top: 0.5em;
 }
 
 section.summary h3 {
     padding: 0;
     margin: 0;
+    display: inline;
+    padding-right: 0.5em;
 }
 
 /* Work Experience */
@@ -181,11 +182,11 @@ ul.fun-facts {
         </section>
 
         <section class="summary">
-            <div class="summary" style="flex: 1;">
+            <div>
                 <h3>Past</h3>
                 Senior Machine Learning Engineer with 12 years experience including Amazon and Startups, applying Machine Learning, Cloud, Kubernetes, and Big Data technologies to deliver &gt; $100M in annual revenue increases and significant boosts to user retention.
             </div>
-            <div class="summary" style="flex: 1;">
+            <div>
                 <h3>Future</h3>
                 Seeking Senior/Staff Machine Learning Engineer positions leading tech, growing/mentoring junior and mid-level engineers, and delivering high-impact solutions and architectures in ambiguous problem spaces.
             </div>
@@ -212,8 +213,6 @@ ul.fun-facts {
                             <li>Increased annual revenue by $180M</li>
                             <li>Reduced returns on AC purchases by 3.5%</li>
                             <li>Reduce AC relevance defect rate by 25%</li>
-                        </ul>
-                        <ul>
                             <li>Authored tech roadmaps and architectures, reducing system complexity and improving org velocity</li>
                             <li>Mentored junior engineers and created/ran tech talk series for professional growth and knowledge sharing</li>
                             <li>Lead team of 8 engineers delivering ML, pipelines, and API projects</li>
@@ -241,8 +240,6 @@ ul.fun-facts {
                             <li>Built automatic model training, model eval, active learning, and online inference systems</li>
                             <li>Built full-service text-tagging and dataset management system</li>
                             <li>Built backend (Python/PyTorch) and frontend</li>
-                        </ul>
-                        <ul>
                             <li>Taggit targets feedback quantification, content moderation, topic modeling, etc applications.</li>
                             <li>Delivered object detection/image classification system for identifying specific shoes from consumer photos</li>
                             <li>Built smart config-driven scraper for continuous and efficient data collection from Apple, Twitter, etc</li>
@@ -269,8 +266,6 @@ ul.fun-facts {
                             <li>Delivered NLP-powered Insights product providing text exploration, boosting dashboard MAU 150%</li>
                             <li>Designed and delivered Love Report data product, forming basis for white glove data services</li>
                             <li>Delivered quick-response predictor adopted by largest customers to reduce support costs</li>
-                        </ul>
-                        <ul>
                             <li>Proposed and delivered phrase extraction/topic model</li>
                             <li>Proposed and delivered sentinement classifier</li>
                             <li>Coordinated with product and customer success teams to define experiments and features</li>
@@ -297,8 +292,6 @@ ul.fun-facts {
                         <ul>
                             <li>Built candidate set via information retrieval and full-text search techniques</li>
                             <li>Created search-based personalization/recommender system</li>
-                        </ul>
-                        <ul>
                             <li>Created engineering process reducing incident rates significantly</li>
                             <li>Implemented recommendation quality metrics</li>
                             <li>Lead team of 2 engineers</li>
@@ -324,8 +317,6 @@ ul.fun-facts {
                         <ul>
                             <li>Built real-time slot reservation/selling system on Google Cloud Platform</li>
                             <li>Authored Javascript front-end and initial Python back-end</li>
-                        </ul>
-                        <ul>
                             <li>Created embedded tag for e-commerce partners to enable cross-site group gifting</li>
                             <li>Lead 1 back-end engineer</li>
                         </ul>
@@ -349,8 +340,6 @@ ul.fun-facts {
                     <div class="bullets">
                         <ul>
                             <li>Built product and brand recommender system based on user behavior</li>
-                        </ul>
-                        <ul>
                             <li>Integrated with external affiliate marketing systems</li>
                         </ul>
                     </div>
@@ -374,57 +363,12 @@ ul.fun-facts {
             </article>
         </section>
 
-        <section class="skills">
-            <div class="skills-used">
-                <h2 class="subtitle">Skills</h2>
-                <ul class="skills">
-                    <li class="skill">Python</li>
-                    <li class="skill">PyTorch</li>
-                    <li class="skill">Tensorflow</li>
-                    <li class="skill">NLP</li>
-                    <li class="skill">Text Classification</li>
-                    <li class="skill">Model Deployment</li>
-                    <li class="skill">Model Productionization</li>
-                    <li class="skill">Feature Engineering</li>
-                    <li class="skill">Text Embedding / Word2vec</li>
-                    <li class="skill">Sentiment Analysis</li>
-                    <li class="skill">Spark</li>
-                    <li class="skill">Recommender Systems</li>
-                    <li class="skill">Java</li>
-                    <li class="skill">AWS</li>
-                    <li class="skill">EMR</li>
-                    <li class="skill">CDK</li>
-                    <li class="skill">Communication</li>
-                    <li class="skill">Docker</li>
-                    <li class="skill">Kubernetes</li>
-                    <li class="skill">Deep Learning</li>
-                    <li class="skill">Topic Modeling</li>
-                    <li class="skill">Scala</li>
-                    <li class="skill">A/B Testing</li>
-                    <li class="skill">SQL</li>
-                    <li class="skill">Data Science</li>
-                    <li class="skill">Data Engineering</li>
-                    <li class="skill">Language Modeling</li>
-                    <li class="skill">Trust Modeling</li>
-                    <li class="skill">Relevance Modeling</li>
-                    <li class="skill">Information Retrieval</li>
-                    <li class="skill">Data Structures</li>
-                    <li class="skill">Algorithms</li>
-                    <li class="skill">Linux</li>
-                    <li class="skill">CI/CD</li>
-                    <li class="skill">ML Lifecycle</li>
-                    <li class="skill">Big Data</li>
-                    <li class="skill">E-Commerce</li>
-                </ul>
-            </div>
-        </section>
-
         <section class="papers-and-patents">
             <h2 class="subtitle">Papers and Patents</h2>
             <span>
-                <span class="subsubtitle">Patent</span> <a href="https://patents.google.com/patent/US8990455B1/en">
-                    Offloading tasks from a central processing unit to peripheral function engines
-                </a>
+                <span class="subsubtitle">Patent</span> 
+                <a href="https://patents.google.com/patent/US8990455B1/en">Offloading tasks from a central processing unit to peripheral function engines:</a>
+                <span>A method for maximizing utilization of on-chip SOC resources by offloading tasks to heterogeneous co-processors. Reduces overall BOM costs and system power consumption.</span>
             </span>
         </section>
 
@@ -436,7 +380,7 @@ ul.fun-facts {
                 <ul class="highlights">
                     <li class="highlight">70-80 RSVPs per meetup</li>
                     <li class="highlight">Avg 4.8 star rating on meetup.com</li>
-                    <li class="highlight">2019-04 to Present (on hiatus during pandemic)</li>
+                    <li class="highlight">2019-04 to Present</li>
                     <li class="highlight"><a href="https://www.youtube.com/watch?v=hAvtJ516Mw4&t=184s">Example tokenization talk</a></li>
                 </ul>
             </article>
@@ -466,6 +410,55 @@ ul.fun-facts {
                     <li class="highlight">Awarded highest medal on Kaggle (Gold)</li>
                 </ul>
             </article>
+        </section>
+
+        <section class="skills">
+            <div class="skills-used">
+                <h2 class="subtitle">Skills</h2>
+                <ul class="skills">
+                    <li class="skill">Python</li>
+                    <li class="skill">SQL</li>
+                    <li class="skill">Java</li>
+                    <li class="skill">Javascript</li>
+                    <li class="skill">Scala</li>
+
+                    <li class="skill">PyTorch</li>
+                    <li class="skill">Tensorflow</li>
+                    <li class="skill">Deep Learning</li>
+                    <li class="skill">NLP</li>
+                    <li class="skill">Text Classification</li>
+                    <li class="skill">Text Embedding / Word2vec</li>
+                    <li class="skill">Language Modeling</li>
+                    <li class="skill">Topic Modeling</li>
+                    <li class="skill">Recommender Systems</li>
+                    <li class="skill">Model Deployment</li>
+                    <li class="skill">Model Productionization</li>
+                    <li class="skill">Feature Engineering</li>
+                    <li class="skill">Relevance Modeling</li>
+                    <li class="skill">Sentiment Analysis</li>
+                    <li class="skill">ML Lifecycle</li>
+                    <li class="skill">Information Retrieval</li>
+                    <li class="skill">Trust Modeling</li>
+
+                    <li class="skill">Spark</li>
+                    <li class="skill">AWS</li>
+                    <li class="skill">EMR</li>
+                    <li class="skill">CI/CD</li>
+                    <li class="skill">CDK</li>
+                    <li class="skill">Kubernetes</li>
+                    <li class="skill">Docker</li>
+                    <li class="skill">Linux</li>
+                    <li class="skill">Big Data</li>
+                    <li class="skill">Data Engineering</li>
+                    <li class="skill">Data Science</li>
+                    <li class="skill">A/B Testing</li>
+                    
+                    <li class="skill">Communication</li>
+                    <li class="skill">E-Commerce</li>
+                    <li class="skill">Data Structures</li>
+                    <li class="skill">Algorithms</li>
+                </ul>
+            </div>
         </section>
 
         <section class="education">
