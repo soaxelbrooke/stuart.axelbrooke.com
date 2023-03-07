@@ -126,6 +126,18 @@
             border-radius: 8px;
         }
 
+	.pointscrape-text {
+	    font-size: 6em;
+	    color: #ff6c41;
+	    margin-bottom: 0;
+            line-height: 1;
+            margin-bottom: 0 !important;
+            font-weight: 600;
+            background: -webkit-linear-gradient(141deg, #ff1c0e 0%, #ff6c41 71%, #ff9b5b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+	}
+
         @media (max-width: 600px) {
             .grid-container {
                 grid-template-columns: 1fr;
@@ -191,6 +203,22 @@
         <section>
             <div class="container featured-projects">
                 <h1 class="title">Featured Projects</h1>
+
+                <div class="hero-body is-paddingless">
+                    <div class="container grid-container project">
+                        <div class="grid-box">
+                            <h1 class="subsubtitle"><a href="https://www.thoughtvector.io/pointscrape/">PointScrape</a> - Web Datasets as a Service</h1>
+                            <p>PointScrape allows you to easily and efficiently build and update large datasets from public
+			    data on the web. It enables pretraining of models for low-data scenarios, and fine-tuning of LLMs
+			    to a specific domain.</p>
+                        </div>
+
+                        <div class="grid-box img" style="padding: 2em 0;">
+			    <p class="pointscrape-text">Point</p>
+			    <p class="pointscrape-text">Scrape</p>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="hero-body is-paddingless">
                     <div class="container grid-container project">
